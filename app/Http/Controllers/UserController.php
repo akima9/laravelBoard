@@ -13,7 +13,8 @@ class UserController extends Controller
 
     public function store()
     {
-
+        $reqData = request()->only(['userId', 'userPw1', 'userPw2']);
+        var_dump($reqData['userId']);
     }
 
     public function login()
