@@ -21,12 +21,8 @@ Route::get('/', function () {
 
 Route::get('register', [UserController::class, 'create']);
 
-Route::get('login', function () {
-    return view('users/login');
-});
+Route::get('login', [UserController::class, 'login']);
 
-Route::get('mypage', function () {
-    return view('users/mypage');
-});
+Route::get('mypage', [UserController::class, 'mypage']);
 
 Route::post('users', [UserController::class, 'store']);

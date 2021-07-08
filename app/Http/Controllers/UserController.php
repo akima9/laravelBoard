@@ -15,4 +15,14 @@ class UserController extends Controller
     {
 
     }
+
+    public function login()
+    {
+        return view('users/login');
+    }
+
+    public function mypage()
+    {
+        return view('users/mypage');
+    }
 }
